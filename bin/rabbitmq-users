@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rabbitmqctl add_user b2c_client SuperPassword000
+rabbitmqctl set_permissions -p / b2c_client ".*" ".*" ".*"
+echo "user created!"
