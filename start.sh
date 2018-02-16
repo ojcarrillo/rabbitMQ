@@ -5,4 +5,4 @@ docker run \
 --hostname my-rabbit \
 -v /volume/docker/rabbitmq/data/log:/data/log \
 -v /volume/docker/rabbitmq/data/mnesia:/data/mnesia \
- dockerfile/rabbitmq
+ dk_rabbitmq
