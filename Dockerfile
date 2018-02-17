@@ -29,7 +29,7 @@ RUN \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated rabbitmq-server && \
   rm -rf /var/lib/apt/lists/* && \
   rabbitmq-plugins enable rabbitmq_management && \
-  echo "[{rabbit, [{loopback_users, [] }, { rabbitmq_management, [ { load_definitions, "/etc/rabbitmq/definitions.json" } ] } ]}]." > /etc/rabbitmq/rabbitmq.config && \
+echo "[{rabbit, [{loopback_users, []}]}]." > /etc/rabbitmq/rabbitmq.config && \
   chmod +x /usr/local/bin/*
 
 # Create user for mq_movctas
